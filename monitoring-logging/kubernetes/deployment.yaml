@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: monitoring-logging
+  labels:
+    app: monitoring-logging
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: monitoring-logging
+  template:
+    metadata:
+      labels:
+        app: monitoring-logging
+    spec:
+      containers:
+      - name: monitoring-logging
+        image: sedatr/mikro/monitoring-logging:latest
+        ports:
+        - containerPort: 8080

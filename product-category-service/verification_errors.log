@@ -1,0 +1,24 @@
+Error: Failed to initialize go module
+Error: Failed to verify and fix go.mod and go.sum in product-category-service
+Error: Failed to navigate to product-catalog-service directory
+Error: Failed to verify and fix go.mod and go.sum in product-catalog-service
+Error: Failed to navigate to authentication-authorization directory
+Error: Failed to verify and fix go.mod and go.sum in authentication-authorization
+Error: Failed to navigate to service-discovery-load-balancing directory
+Error: Failed to verify and fix go.mod and go.sum in service-discovery-load-balancing
+Error: Failed to navigate to caching-data-persistence directory
+Error: Failed to verify and fix go.mod and go.sum in caching-data-persistence
+Error: Failed to navigate to monitoring-logging directory
+Error: Failed to verify and fix go.mod and go.sum in monitoring-logging
+Error: Failed to navigate to /path/to/product-category-service directory
+Error: Failed to verify and fix go.mod and go.sum in product-category-service
+Error: Failed to navigate to /path/to/product-catalog-service directory
+Error: Failed to verify and fix go.mod and go.sum in product-catalog-service
+Error: Failed to navigate to /path/to/authentication-authorization directory
+Error: Failed to verify and fix go.mod and go.sum in authentication-authorization
+Error: Failed to navigate to /path/to/service-discovery-load-balancing directory
+Error: Failed to verify and fix go.mod and go.sum in service-discovery-load-balancing
+Error: Failed to navigate to /path/to/caching-data-persistence directory
+Error: Failed to verify and fix go.mod and go.sum in caching-data-persistence
+Error: Failed to navigate to /path/to/monitoring-logging directory
+Error: Failed to verify and fix go.mod and go.sum in monitoring-logging

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: authentication-authorization
+  labels:
+    app: authentication-authorization
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: authentication-authorization
+  template:
+    metadata:
+      labels:
+        app: authentication-authorization
+    spec:
+      containers:
+      - name: authentication-authorization
+        image: sedatr/mikro/authentication-authorization:latest
+        ports:
+        - containerPort: 8080

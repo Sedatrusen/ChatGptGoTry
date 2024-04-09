@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-discovery-load-balancing
+  labels:
+    app: service-discovery-load-balancing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service-discovery-load-balancing
+  template:
+    metadata:
+      labels:
+        app: service-discovery-load-balancing
+    spec:
+      containers:
+      - name: service-discovery-load-balancing
+        image: your-registry/service-discovery-load-balancing:latest
+        ports:
+        - containerPort: 8080

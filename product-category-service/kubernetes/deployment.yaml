@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-category-service
+  labels:
+    app: product-category-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-category-service
+  template:
+    metadata:
+      labels:
+        app: product-category-service
+    spec:
+      containers:
+      - name: product-category-service
+        image: sedatr/mikro/product-category-service:latest
+        ports:
+        - containerPort: 8080

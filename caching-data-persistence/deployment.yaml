@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: caching-data-persistence
+  labels:
+    app: caching-data-persistence
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: caching-data-persistence
+  template:
+    metadata:
+      labels:
+        app: caching-data-persistence
+    spec:
+      containers:
+      - name: caching-data-persistence
+        image: your-registry/caching-data-persistence:latest
+        ports:
+        - containerPort: 8080
